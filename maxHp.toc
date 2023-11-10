@@ -1,0 +1,14 @@
+## Interface: 11200
+
+## Title: |cFFFF8080Relar|r maxHp |cff7fff7f1.00|r
+## Version: 1.00
+## Author: Relar
+## Notes: Displays the current maxHp of raid members, except Mages, Priests, Warlocks, Hunters.
+
+Libs\AceLibrary\AceLibrary.lua
+Libs\AceOO-2.0\AceOO-2.0.lua
+Libs\AceAddon-2.0\AceAddon-2.0.lua
+Libs\AceConsole-2.0\AceConsole-2.0.lua
+Libs\AceEvent-2.0\AceEvent-2.0.lua
+
+maxHp.lua
