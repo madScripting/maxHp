@@ -39,12 +39,13 @@ function maxHp:MaxHp()
 				table.insert(mhpHpArray,UnitHealthMax("raid"..i))
 			end
 		end
-		table.sort(mhpHpArray)
-		mhpMaxHp1 = mhpHpArray[GetNumRaidMembers()]
-		mhpMaxHp2 = mhpHpArray[GetNumRaidMembers() - 1]
-		mhpMaxHp3 = mhpHpArray[GetNumRaidMembers() - 2]
-		mhpMaxHp4 = mhpHpArray[GetNumRaidMembers() - 3]
-		mhpMaxHp5 = mhpHpArray[GetNumRaidMembers() - 4]
+
+		table.sort(mhpHpArray, function(x, y) return x > y end)
+		mhpMaxHp1 = mhpHpArray[1]
+		mhpMaxHp2 = mhpHpArray[2]
+		mhpMaxHp3 = mhpHpArray[3]
+		mhpMaxHp4 = mhpHpArray[4]
+		mhpMaxHp5 = mhpHpArray[5]
 		
 		for i = 1,GetNumRaidMembers() do
 			if UnitClass("raid"..i) ~= "Mage" and UnitClass("raid"..i) ~= "Warlock" and UnitClass("raid"..i) ~= "Priest" and UnitClass("raid"..i) ~= "Hunter" then

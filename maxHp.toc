@@ -1,7 +1,7 @@
 ## Interface: 11200
 
-## Title: |cFFFF8080Relar|r maxHp |cff7fff7f1.00|r
-## Version: 1.00
+## Title: |cFFFF8080Relar|r maxHp |cff7fff7f1.01|r
+## Version: 1.01
 ## Author: Relar
 ## Notes: Displays the current maxHp of raid members, except Mages, Priests, Warlocks, Hunters.
 
